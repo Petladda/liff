@@ -10,7 +10,7 @@
   <p id="os"><b>OS:</b> </p>
   <p id="language"><b>Language:</b> </p>
   <p id="version"><b>Version:</b> </p>
-  <p id="isInClient"><b>isInClient:</b> </p>
+  <p id="isInClient"><b>IsInClient:</b> </p>
   <p id="accessToken"><b>AccessToken:</b> </p>
   <img id="pictureUrl">
   <p id="userId"><b>userId:</b> </p>
@@ -86,9 +86,9 @@
       document.getElementById("language").append(liff.getLanguage())
       document.getElementById("version").append(liff.getVersion())
       document.getElementById("accessToken").append(liff.getAccessToken())
-      console.log("client",isInClient);
-      document.getElementById("isInClient").append(liff.getisInClient())
-      if(liff.isInClient){
+      console.log("client",IsInClient());
+      document.getElementById("isInClient").append(liff.getIsInClient())
+      if(liff.IsInClient()){
         document.getElementById("btnLogOut").style.display = "none"
 
       }else{
